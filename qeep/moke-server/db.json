@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Hardik Gajera",
+      "email": "hardik.gajera.d.84@gmail.com",
+      "username": "hardik",
+      "password": "123abc",
+      "phone": "8849619764"
+    },
+    {
+      "id": 2,
+      "name": "john doe",
+      "email": "john@gmail.com",
+      "username": "john",
+      "password": "123abc",
+      "phone": "1-570-236-7033"
+    },
+
+    {
+      "id": 3,
+      "name": "david morrison",
+      "email": "morrison@gmail.com",
+      "username": "mor_2314",
+      "password": "83r5^_",
+      "phone": "1-570-236-7033"
+    },
+
+    {
+      "id": 4,
+      "name": "kevin ryan",
+      "email": "kevin@gmail.com",
+      "username": "kevinryan",
+      "password": "kev02937@",
+      "phone": "1-567-094-1345"
+    },
+    {
+      "id": 5,
+      "name": "don romer",
+      "email": "don@gmail.com",
+      "username": "donero",
+      "password": "ewedon",
+      "phone": "1-765-789-6734"
+    },
+    {
+      "id": 6,
+      "name": "derek powell",
+      "email": "derek@gmail.com",
+      "username": "derek",
+      "password": "jklg*_56",
+      "phone": "1-956-001-1945"
+    },
+    {
+      "id": 7,
+      "name": "david russell",
+      "email": "david_r@gmail.com",
+      "username": "david_r",
+      "password": "3478*#54",
+      "phone": "1-678-345-9856"
+    },
+    {
+      "id": 8,
+      "name": "miriam snyder",
+      "email": "miriam@gmail.com",
+      "username": "snyder",
+      "password": "f238&@*$",
+      "phone": "1-123-943-0563"
+    },
+    {
+      "id": 9,
+      "name": "william hopkins",
+      "email": "william@gmail.com",
+      "username": "hopkins",
+      "password": "William56$hj",
+      "phone": "1-478-001-0890"
+    },
+    {
+      "id": 10,
+      "email": "kate@gmail.com",
+      "username": "kate_h",
+      "password": "kfejk@*_",
+      "name": "kate hale",
+      "phone": "1-678-456-1934"
+    },
+    {
+      "id": 11,
+      "email": "admin@gmail.com",
+      "username": "kate_h",
+      "password": "admin",
+      "name": "kate hale",
+      "phone": "1-678-456-1934"
+    }
+  ],
+  "growUser": [
+    {
+      "id": 1,
+      "email": "anupam@gmail.com",
+      "category": "Investor"
+    }
+  ],
+  "products": [{}]
+}
