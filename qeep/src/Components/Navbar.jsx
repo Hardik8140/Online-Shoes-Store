@@ -11,7 +11,6 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
-  Stack,
 } from "@chakra-ui/react";
 
 const Navbar = () => {
@@ -45,7 +44,7 @@ const Navbar = () => {
         <Link to="/about">About Us</Link>
         <Link to="/contact">Contact</Link>
       </Box>
-      <Input placeholder="" w="40em" h="2.5em" />
+      <Input placeholder="Search Qeep's Product's" w="40em" h="2.5em" />
 
       <Box
         w="300px"
