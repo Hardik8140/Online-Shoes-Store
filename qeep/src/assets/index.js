@@ -13,8 +13,22 @@ import Headphone from "./headPhone.jpg";
 import drone from "./drone.jpg";
 import buds from "./buds.jpg";
 import Alarm from "./alarm.jpg";
+import Product from "./product.png";
+import Satisfaction from "./satisfaction.png";
+import just from "./just.png";
+import fast from "./fast.png";
+import mens from "./mens.png";
+import womens from "./women.png";
+import tech from "./tech.png";
 
 export {
+  tech,
+  womens,
+  mens,
+  fast,
+  just,
+  Satisfaction,
+  Product,
   Alarm,
   buds,
   drone,

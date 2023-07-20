@@ -98,5 +98,326 @@
       "category": "Investor"
     }
   ],
-  "products": [{}]
+  "products": [
+    {
+      "id": 1,
+      "image": "https://m.media-amazon.com/images/I/71cotkr8DhL._AC_UL400_.jpg",
+      "name": "Mens Classigy M Running Shoe",
+      "brand": "Adidas",
+      "price": "1699",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 2,
+      "image": "https://m.media-amazon.com/images/I/71u2XOFXAIL._AC_UL400_.jpg",
+      "name": "Men's Sm-675 Running Shoe",
+      "brand": "Sparx",
+      "price": "799",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 3,
+      "image": "https://m.media-amazon.com/images/I/71cFwyj2EJL._AC_UL400_.jpg",
+      "name": "Mens Fluidglow M Running Shoes",
+      "brand": "Adidas",
+      "price": "2299",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 4,
+      "image": "https://m.media-amazon.com/images/I/51Cs+xUnFNL._AC_UL400_.jpg",
+      "name": "Mens Coarse Running Shoe",
+      "brand": "Puma",
+      "price": "1749",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 5,
+      "image": "https://m.media-amazon.com/images/I/819d8caWiYL._AC_UL400_.jpg",
+      "name": "Mens Classigy M Running Shoe",
+      "brand": "Nike",
+      "price": "3196",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 6,
+      "image": "https://m.media-amazon.com/images/I/81lX-z3OgRL._AC_UL400_.jpg",
+      "name": "mens Sx0421g Running Shoes",
+      "brand": "Sparx",
+      "price": "891",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 7,
+      "image": "https://m.media-amazon.com/images/I/61kNllB+eqL._AC_UL400_.jpg",
+      "name": "Womens Hearts Ballerina E Sneaker",
+      "brand": "BATA",
+      "price": "369",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 8,
+      "image": "https://m.media-amazon.com/images/I/71ftzWAoUEL._AC_UL400_.jpg",
+      "name": "Mens Speed Riser Running Shoe",
+      "brand": "Reebok",
+      "price": "1735",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 9,
+      "image": "https://m.media-amazon.com/images/I/71DUQrjDXUS._AC_UL400_.jpg",
+      "name": "Womens Go Walk Joy - Sensational Day Sneaker",
+      "brand": "Skechers",
+      "price": "3147",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 10,
+      "image": "https://m.media-amazon.com/images/I/71jeXaw3dwL._AC_UL400_.jpg",
+      "name": "Mens Classigy M Running Shoe",
+      "brand": "Adidas",
+      "price": "1551",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 11,
+      "image": "https://m.media-amazon.com/images/I/61m7jMPlfVL._AC_UL400_.jpg",
+      "name": "Trendy Flatforms Sandals For Girls",
+      "brand": "Shoetopia",
+      "price": "599",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 12,
+      "image": "https://m.media-amazon.com/images/I/81zvQE8fMfL._AC_UL400_.jpg",
+      "name": "Men's Express-08 Sports Running,Walking,Gym,Training",
+      "brand": "ASIAN",
+      "price": "599",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 13,
+      "image": "https://m.media-amazon.com/images/I/71aWZG-jVjL._AC_UL400_.jpg",
+      "name": "Womens Glideease W Running Shoe",
+      "brand": "Adidas",
+      "price": "1740",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 14,
+      "image": "https://m.media-amazon.com/images/I/61KNJav3S9L._AC_UL400_.jpg",
+      "name": "boAt Airdopes 141 Bluetooth Truly Wireless in Ear Headphones with 42H Playtime,Low Latency Mode for Gaming, ENx Tech",
+      "brand": "Boat",
+      "price": "1299",
+      "category": "Tech"
+    },
+    {
+      "id": 15,
+      "image": "https://m.media-amazon.com/images/I/61-ZYvldY+L._AC_UL400_.jpg",
+      "name": "OnePlus Nord Buds 2 True Wireless in Ear Earbuds with Mic, Upto 25dB ANC 12.4mm Dynamic Titanium",
+      "brand": "OnePlus",
+      "price": "3196",
+      "category": "Tech"
+    },
+    {
+      "id": 16,
+      "image": "https://m.media-amazon.com/images/I/514NPRZ1AQL._AC_UL400_.jpg",
+      "name": "OnePlus Nord Buds True Wireless in Ear Earbuds with Mic, 12.4mm Titanium Drivers, Playback:Up to 30hr case, 4-Mic Design",
+      "brand": "OnePlus",
+      "price": "2799",
+      "category": "Tech"
+    },
+    {
+      "id": 17,
+      "image": "https://m.media-amazon.com/images/I/61kNllB+eqL._AC_UL400_.jpg",
+      "name": "Womens Hearts Ballerina E Sneaker",
+      "brand": "BATA",
+      "price": "369",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 18,
+      "image": "https://m.media-amazon.com/images/I/61q65Ob+nrL._AC_UL400_.jpg",
+      "name": "realme TechLife Buds T100 Bluetooth Truly Wireless in Ear Earbuds with mic, AI ENC for Calls, Google Fast Pair, 28 Hour",
+      "brand": "realme",
+      "price": "1735",
+      "category": "Tech"
+    },
+    {
+      "id": 19,
+      "image": "https://m.media-amazon.com/images/I/5191pl8FHPL._AC_UL400_.jpg",
+      "name": "Womens Heels Heeled Sandal",
+      "brand": "Shoetopia",
+      "price": "630",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 20,
+      "image": "https://m.media-amazon.com/images/I/81yarb-PC-L._AC_UL400_.jpg",
+      "name": "Women's Ultra Flex 2.0 Flash Illusion Sneakers",
+      "brand": "Skechers",
+      "price": "3699",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 21,
+      "image": "https://m.media-amazon.com/images/I/6162tcYP6tL._AC_UL400_.jpg",
+      "name": "Sneaker Casual Shoes for Men | Soft Cushioned Insole, Slip",
+      "brand": "Red Tape",
+      "price": "1725",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 22,
+      "image": "https://m.media-amazon.com/images/I/61R-dJO92TL._AC_UL400_.jpg",
+      "name": "realme Buds Air 3S Bluetooth Truly Wireless in Ear Earbuds, 11mm Triple Titanium Driver, with Mic AI ENC for Calls",
+      "brand": "realme",
+      "price": "2499",
+      "category": "Tech"
+    },
+    {
+      "id": 23,
+      "image": "https://m.media-amazon.com/images/I/71a5XAAbzbL._AC_UL400_.jpg",
+      "name": "Sony WH-1000XM4 Wireless Premium Noise Cancelling Bluetooth Over Ear Headphones with Mic for Phone Calls",
+      "brand": "Sony",
+      "price": "22990",
+      "category": "Tech"
+    },
+    {
+      "id": 24,
+      "image": "https://m.media-amazon.com/images/I/51G-nCt3mKL._AC_UL400_.jpg",
+      "name": "OnePlus Buds Pro 2 Bluetooth Truly Wireless in Ear Earbuds with Spatial Audio Dynamic Head Tracking,co-Created",
+      "brand": "OnePlus",
+      "price": "11999",
+      "category": "Tech"
+    },
+    {
+      "id": 25,
+      "image": "https://m.media-amazon.com/images/I/716lZiojLgL._AC_UL400_.jpg",
+      "name": "Women and Girls Flat Sandal",
+      "brand": "Shoetopia",
+      "price": "3196",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 26,
+      "image": "https://m.media-amazon.com/images/I/81WLM5y9lIL._AC_UL400_.jpg",
+      "name": "Women's Beach Bingo-Woof Pack Platform ",
+      "brand": "Skechers",
+      "price": "1800",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 27,
+      "image": "https://m.media-amazon.com/images/I/61fnCHnjhyL._AC_UL400_.jpg",
+      "name": "Mens Energy Burst M Running Shoe",
+      "brand": "Reebok",
+      "price": "1431",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 28,
+      "image": "https://m.media-amazon.com/images/I/51Cs+xUnFNL._AC_UL400_.jpg",
+      "name": "Mens Coarse Running Shoe",
+      "brand": "Puma",
+      "price": "1735",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 29,
+      "image": "https://m.media-amazon.com/images/I/71JyGoxMHUL._AC_UL400_.jpg",
+      "name": "Womens Bobs Skipper - Woof Party Sneaker",
+      "brand": "Skechers",
+      "price": "3303",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 30,
+      "image": "https://m.media-amazon.com/images/I/517NUpFyEbL._AC_UL400_.jpg",
+      "name": "Unisex-Adult Trigger Running Shoe",
+      "brand": "Puma",
+      "price": "1891",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 31,
+      "image": "https://m.media-amazon.com/images/I/71p0zrea7xL._AC_UL400_.jpg",
+      "name": "Womens Skech-air Dynamight-Radiant C Casual Shoe",
+      "brand": "Skechers",
+      "price": "3109",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 32,
+      "image": "https://m.media-amazon.com/images/I/612sszRHxaL._AC_UL400_.jpg",
+      "name": "Unisex-Adult Softride Pro Coast Walking Shoe",
+      "brand": "Puma",
+      "price": "5599",
+      "category": "Men's Shoes"
+    },
+    {
+      "id": 33,
+      "image": "https://m.media-amazon.com/images/I/81DAbyinJ+L._AC_UL400_.jpg",
+      "name": "Womens Adi Zoom W Running Shoe",
+      "brand": "Adidas",
+      "price": "1539",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 34,
+      "image": "https://m.media-amazon.com/images/I/51D3vpkHdwL._AC_UL400_.jpg",
+      "name": "boAt Airdopes Atom 81 True Wireless Earbuds with Upto 50H Playtime, Quad Mics ENx™ Tech, 13MM Drivers,Super Low",
+      "brand": "Boat",
+      "price": "1299",
+      "category": "Tech"
+    },
+    {
+      "id": 35,
+      "image": "https://m.media-amazon.com/images/I/41shy5i6A7L._AC_UL400_.jpg",
+      "name": "OnePlus Nord Buds True Wireless in Ear Earbuds with Mic, 12.4mm Titanium Drivers, Playback:Up to 30hr case, 4-Mic Design",
+      "brand": "OnePlus",
+      "price": "2799",
+      "category": "Tech"
+    },
+    {
+      "id": 36,
+      "image": "https://m.media-amazon.com/images/I/61aasAbKvvL._AC_UL400_.jpg",
+      "name": "realme TechLife Buds T100 Bluetooth Truly Wireless in Ear Earbuds with mic, AI ENC for Calls, Google Fast Pair, 28 Hour",
+      "brand": "realme",
+      "price": "1499",
+      "category": "Tech"
+    },
+    {
+      "id": 37,
+      "image": "https://m.media-amazon.com/images/I/61u1VALn6JL._AC_UL400_.jpg",
+      "name": "boAt Rockerz 450 Bluetooth On Ear Headphones with Mic, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions",
+      "brand": "Boat",
+      "price": "1499",
+      "category": "Tech"
+    },
+    {
+      "id": 38,
+      "image": "https://m.media-amazon.com/images/I/51oc4wZR2DL._AC_UL400_.jpg",
+      "name": "boAt Nirvana Ion with 120 HRS Playback(24hrs/Charge), Crystal Bionic Sound with Dual EQ Modes, Quad Mics ENx",
+      "brand": "Boat",
+      "price": "2298",
+      "category": "Tech"
+    },
+    {
+      "id": 39,
+      "image": "https://m.media-amazon.com/images/I/61qvYVSy7HL._AC_UL400_.jpg",
+      "name": "Womens-GO Walk Flex - Vella-Walking Shoes",
+      "brand": "Skechers",
+      "price": "3599",
+      "category": "Women's Shoes"
+    },
+    {
+      "id": 40,
+      "image": "https://m.media-amazon.com/images/I/81T4lbje-XL._AC_UL400_.jpg",
+      "name": "Womens Go Walk Evolution Ultra-conce Walking Shoes",
+      "brand": "Skechers",
+      "price": "3299",
+      "category": "Women's Shoes"
+    }
+  ]
 }

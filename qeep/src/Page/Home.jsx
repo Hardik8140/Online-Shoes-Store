@@ -1,11 +1,13 @@
 import {
   Box,
+  Button,
   Card,
-  Center,
   Heading,
   Image,
   SimpleGrid,
   Text,
+  Input,
+  Center,
 } from "@chakra-ui/react";
 import React from "react";
 import {
@@ -15,11 +17,18 @@ import {
   Lotto,
   Nike,
   OnitsukaTiger,
+  Product,
+  Satisfaction,
   Sperry,
   Ugg,
   buds,
   drone,
+  fast,
+  just,
   mainShoes,
+  mens,
+  tech,
+  womens,
 } from "../assets";
 
 import { ArrowDownIcon } from "@chakra-ui/icons";
@@ -45,8 +54,8 @@ const Home = () => {
 
       {/* Brand Logo */}
 
-      <Box>
-        <Heading ml="90px">Brands</Heading>
+      <Box boxShadow="md" w="90%" m="auto" borderRadius="20px">
+        <Heading ml="60px">Brands</Heading>
         <Box display="flex" w="90%" m="auto" justifyContent="space-between">
           <Image src={Sperry} w="10%" aspectRatio="4/3" objectFit="contain" />
           <Image src={Nike} w="10%" aspectRatio="4/3" objectFit="contain" />
@@ -60,6 +69,121 @@ const Home = () => {
           />
           <Image src={Ugg} w="10%" aspectRatio="4/3" objectFit="contain" />
         </Box>
+      </Box>
+
+      {/* Customer Service  */}
+
+      <Box w="90%" m="auto" mt="100px" boxShadow="md" borderRadius="20px" p={6}>
+        <Heading as="h4" size="lg" mb={10}>
+          We provide best <br /> customer experience
+        </Heading>
+
+        <SimpleGrid columns={4} gap={7}>
+          <Box>
+            <Image
+              p={2}
+              src={Product}
+              w="50px"
+              backgroundColor="lightgray"
+              borderRadius={7}
+              mb={8}
+            />
+            <Heading as="h3" size="lg" mb="5">
+              Original Product
+            </Heading>
+            <Text color="darkgray">
+              We provide money back guarantee if the product are not original
+            </Text>
+          </Box>
+          <Box>
+            <Image
+              p={2}
+              src={Satisfaction}
+              w="50px"
+              backgroundColor="lightgray"
+              borderRadius={7}
+              mb={8}
+            />
+            <Heading as="h3" size="lg" mb="5">
+              Original Product
+            </Heading>
+            <Text color="darkgray">
+              We provide money back guarantee if the product are not original
+            </Text>
+          </Box>
+          <Box>
+            <Image
+              p={2}
+              src={just}
+              w="50px"
+              backgroundColor="lightgray"
+              borderRadius={7}
+              mb={8}
+            />
+            <Heading as="h3" size="lg" mb="5">
+              Original Product
+            </Heading>
+            <Text color="darkgray">
+              We provide money back guarantee if the product are not original
+            </Text>
+          </Box>
+          <Box>
+            <Image
+              p={2}
+              src={fast}
+              w="50px"
+              backgroundColor="lightgray"
+              borderRadius={7}
+              mb={8}
+            />
+            <Heading as="h3" size="lg" mb="5">
+              Original Product
+            </Heading>
+            <Text color="darkgray">
+              We provide money back guarantee if the product are not original
+            </Text>
+          </Box>
+        </SimpleGrid>
+      </Box>
+
+      {/* Current Picks */}
+
+      <Box w="90%" m="auto" mt="100px">
+        <Heading as="h4" size="lg" mb={10} pl={7}>
+          Current Picks
+        </Heading>
+
+        <SimpleGrid columns={3} gap={4}>
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+          >
+            <Image src={mens} w="90%" aspectRatio="4/3" objectFit="contain" />
+            <Button m="4">Men's Fashion</Button>
+          </Box>
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+          >
+            <Image src={womens} w="90%" aspectRatio="4/3" objectFit="contain" />
+            <Button m="4">Women's Fashion</Button>
+          </Box>
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+          >
+            <Image src={tech} w="90%" aspectRatio="4/3" objectFit="contain" />
+            <Button m="4">Tech Accessories</Button>
+          </Box>
+          {/* <Image src={Premium} backgroundColor="lightgray" p={10} />
+          <Image src={Kids} backgroundColor="lightgray" p={10} /> */}
+        </SimpleGrid>
       </Box>
 
       {/* Tech */}
@@ -145,6 +269,32 @@ const Home = () => {
           </Card>
         </Box>
       </SimpleGrid>
+
+      {/* Subscribe */}
+
+      <Center textAlign="center" mb={7}>
+        <Box w="45%">
+          <Heading as="h4" size="lg" mb={3}>
+            Subscribe to our newsletter to get updates to our latest collections
+          </Heading>
+          <Text mb={3}>
+            Get 20% off on your first order by subscribing to our newsletter{" "}
+          </Text>
+          <Box
+            mb={3}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Input type="text" placeholder="Enter your email" w="40%" />
+            <Button backgroundColor="black" color="white">
+              Subscribe
+            </Button>
+          </Box>
+          <Text mb={3}>You will be able to unsubscribe at any time</Text>
+          <Text mb={3}>Read our Privacy Policy here</Text>
+        </Box>
+      </Center>
     </Box>
   );
 };
