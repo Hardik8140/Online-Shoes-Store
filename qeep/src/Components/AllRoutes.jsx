@@ -7,6 +7,7 @@ import Products from "../Page/Products";
 import SingleProduct from "../Page/SingleProduct";
 import Deals from "../Page/Deals";
 import Contact from "../Page/Contact";
+import Cart from "../Page/Cart";
 
 const AllRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const AllRoutes = () => {
         <Route path="/products/:id" element={<SingleProduct />} />
         <Route path="/deals" element={<Deals />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </div>
   );
