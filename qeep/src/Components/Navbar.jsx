@@ -28,8 +28,8 @@ const Navbar = () => {
         </Link>
       </Box>
       <Box display="flex" justifyContent="space-between" w="240px">
-        <Link>
-          <Menu isLazy isHoverable>
+        <Link to="/products">
+          {/* <Menu isLazy isHoverable>
             <MenuButton>Category</MenuButton>
             <MenuList>
               <MenuItem as="a" href="#">
@@ -39,7 +39,8 @@ const Navbar = () => {
                 Tech
               </MenuItem>
             </MenuList>
-          </Menu>
+          </Menu> */}
+          Products
         </Link>
         <Link to="/about">About Us</Link>
         <Link to="/contact">Contact</Link>
@@ -52,14 +53,16 @@ const Navbar = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Image
-          src={shopping}
-          w="44px"
-          backgroundColor="#d6ccbe"
-          borderRadius="50%"
-          _hover={{ backgroundColor: "#e3caa8" }}
-          p={3}
-        />
+        <Link to="/cart">
+          <Image
+            src={shopping}
+            w="44px"
+            backgroundColor="#d6ccbe"
+            borderRadius="50%"
+            _hover={{ backgroundColor: "#e3caa8" }}
+            p={3}
+          />
+        </Link>
         <Image
           src={notification}
           w="44px"
