@@ -8,6 +8,9 @@ import SingleProduct from "../Page/SingleProduct";
 import Deals from "../Page/Deals";
 import Contact from "../Page/Contact";
 import Cart from "../Page/Cart";
+import Checkout from "../Page/Checkout";
+import Wishlist from "../Page/Wishlist";
+import Admin from "../Page/Admin";
 
 const AllRoutes = () => {
   return (
@@ -21,6 +24,9 @@ const AllRoutes = () => {
         <Route path="/deals" element={<Deals />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useContext, useEffect, useReducer, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
   singleProductReducer,
@@ -16,10 +16,12 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
+import { CartContext } from "../Context/CartContext";
 
 const SingleProduct = () => {
   const [state, dispatch] = useReducer(singleProductReducer, initialState);
   const { id } = useParams();
+  const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
     const fetchAndUpdateData = async (id) => {
@@ -39,6 +41,10 @@ const SingleProduct = () => {
   }, [id]);
 
   const { loading, products, error } = state;
+
+  const handleAddToCart = () => {
+    addToCart(products);
+  };
 
   return (
     <Box w="90%" m="auto" mt="70px" mb={10}>
@@ -92,7 +98,9 @@ const SingleProduct = () => {
             <ListItem>Facilisis in pretium nisl aliquet</ListItem>
           </UnorderedList>
 
-          <Button w="100%">Buy Now</Button>
+          <Button w="100%" onClick={handleAddToCart}>
+            Buy Now
+          </Button>
         </Box>
       </SimpleGrid>
     </Box>
