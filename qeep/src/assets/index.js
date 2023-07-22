@@ -20,8 +20,10 @@ import fast from "./fast.png";
 import mens from "./mens.png";
 import womens from "./women.png";
 import tech from "./tech.png";
+import heart from "./heart.png";
 
 export {
+  heart,
   tech,
   womens,
   mens,

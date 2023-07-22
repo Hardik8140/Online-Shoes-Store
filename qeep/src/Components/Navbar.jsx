@@ -1,17 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { logoNoBackground, shopping, notification } from "../assets";
-import {
-  Avatar,
-  Box,
-  Button,
-  Image,
-  Input,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-} from "@chakra-ui/react";
+import { logoNoBackground, shopping, heart } from "../assets";
+import { Avatar, Box, Button, Image, Input } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
@@ -63,14 +53,16 @@ const Navbar = () => {
             p={3}
           />
         </Link>
-        <Image
-          src={notification}
-          w="44px"
-          backgroundColor="#d6ccbe"
-          borderRadius="50%"
-          _hover={{ backgroundColor: "#e3caa8" }}
-          p={3}
-        />
+        <Link to="/wishlist">
+          <Image
+            src={heart}
+            w="44px"
+            backgroundColor="#d6ccbe"
+            borderRadius="50%"
+            _hover={{ backgroundColor: "#e3caa8" }}
+            p={3}
+          />
+        </Link>
         <Avatar name="Oshigaki Kisame" src="" />
         <Button>
           <Link to="/register">Login/SignUp</Link>
