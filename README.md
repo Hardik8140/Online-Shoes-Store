@@ -37,4 +37,4 @@ Construct Individual Project
 ![Screenshot (186)](https://github.com/Hardik8140/guided-aftermath-7976/assets/123854368/093cfb19-5055-45b4-bc94-df7e19c587c8)
 
 ## Deployed Link
-(https://waiting-knife-3384-teal.vercel.app/)
+(https://qeep-rho.vercel.app/)
