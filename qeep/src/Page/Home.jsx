@@ -38,7 +38,13 @@ const Home = () => {
     <Box>
       {/* Main Section of the Landing Page */}
 
-      <SimpleGrid columns={2} w="90%" m="auto" gap={10} p={6}>
+      <SimpleGrid
+        columns={{ base: "1", md: "2" }}
+        w="90%"
+        m="auto"
+        gap={10}
+        p={6}
+      >
         <Box display="flex" flexDirection="column" alignItems="center" p={10}>
           <Heading fontSize="7xl">Rayanzi: soft coal run</Heading>
           <Text>
@@ -55,20 +61,19 @@ const Home = () => {
       {/* Brand Logo */}
 
       <Box boxShadow="md" w="90%" m="auto" borderRadius="20px">
-        <Heading ml="60px">Brands</Heading>
-        <Box display="flex" w="90%" m="auto" justifyContent="space-between">
-          <Image src={Sperry} w="10%" aspectRatio="4/3" objectFit="contain" />
-          <Image src={Nike} w="10%" aspectRatio="4/3" objectFit="contain" />
-          <Image src={Converse} w="10%" aspectRatio="4/3" objectFit="contain" />
-          <Image src={Lotto} w="10%" aspectRatio="4/3" objectFit="contain" />
-          <Image
-            src={OnitsukaTiger}
-            w="10%"
-            aspectRatio="4/3"
-            objectFit="contain"
-          />
-          <Image src={Ugg} w="10%" aspectRatio="4/3" objectFit="contain" />
-        </Box>
+        <Heading as="h2" size="lg" ml="60px">
+          Brands
+        </Heading>
+        <SimpleGrid columns={{ base: "3", md: "6" }} gap={9} p={4}>
+          {/* <Box display="flex" w="90%" m="auto" justifyContent="space-between"> */}
+          <Image src={Sperry} aspectRatio="4/3" />
+          <Image src={Nike} aspectRatio="4/3" />
+          <Image src={Converse} aspectRatio="4/3" />
+          <Image src={Lotto} aspectRatio="4/3" />
+          <Image src={OnitsukaTiger} aspectRatio="4/3" />
+          <Image src={Ugg} aspectRatio="4/3" />
+        </SimpleGrid>
+        {/* </Box> */}
       </Box>
 
       {/* Customer Service  */}
@@ -78,7 +83,7 @@ const Home = () => {
           We provide best <br /> customer experience
         </Heading>
 
-        <SimpleGrid columns={4} gap={7}>
+        <SimpleGrid columns={{ base: "2", md: "4" }} gap={7}>
           <Box>
             <Image
               p={2}
@@ -153,7 +158,7 @@ const Home = () => {
           Current Picks
         </Heading>
 
-        <SimpleGrid columns={3} gap={4}>
+        <SimpleGrid columns={{ base: "1", md: "3" }} gap={4}>
           <Box
             display="flex"
             justifyContent="center"
@@ -188,7 +193,14 @@ const Home = () => {
 
       {/* Tech */}
 
-      <SimpleGrid columns={2} w="90%" m="auto" gap="100px" mt="100px" mb={10}>
+      <SimpleGrid
+        columns={{ base: "1", md: "2" }}
+        w="90%"
+        m="auto"
+        gap="100px"
+        mt="100px"
+        mb={10}
+      >
         <Box>
           <Box p="20px" mb={8} pt={10} pb={10}>
             <Heading fontSize="80px">Tech</Heading>
@@ -273,7 +285,7 @@ const Home = () => {
       {/* Subscribe */}
 
       <Center textAlign="center" mb={7}>
-        <Box w="45%">
+        <Box w={{ base: "90%", md: "45%" }}>
           <Heading as="h4" size="lg" mb={3}>
             Subscribe to our newsletter to get updates to our latest collections
           </Heading>
@@ -286,7 +298,11 @@ const Home = () => {
             alignItems="center"
             justifyContent="center"
           >
-            <Input type="text" placeholder="Enter your email" w="40%" />
+            <Input
+              type="text"
+              placeholder="Enter your email"
+              w={{ base: "90%", md: "45%" }}
+            />
             <Button backgroundColor="black" color="white">
               Subscribe
             </Button>
