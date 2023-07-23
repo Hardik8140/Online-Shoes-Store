@@ -8,9 +8,14 @@ import {
   Input,
   SimpleGrid,
 } from "@chakra-ui/react";
-import React from "react";
+import axios from "axios";
+import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../Context/AuthContext";
 
 const Register = () => {
+  const navigate = useNavigate();
+  const { login } = useContext(AuthContext);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,16 +33,13 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("https://example.com/api/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("User registered successfully!", data);
+    axios
+      .post(`https://growfin.onrender.com/users`, formData)
+      .then((response) => {
+        console.log("User registered successfully!", response.data);
+        const user = response.data;
+        login(user); // Update the user in the AuthContext
+        navigate("/");
       })
       .catch((error) => {
         console.error("Error registering user:", error);

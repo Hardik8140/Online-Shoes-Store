@@ -94,7 +94,10 @@ const Product = () => {
             <CircularProgress isIndeterminate color="green.300" />
           </Box>
         ) : (
-          <SimpleGrid columns={4} gap={9}>
+          <SimpleGrid
+            columns={{ base: "1", md: "3", lg: "4" }}
+            gap={{ base: "6", md: "9" }}
+          >
             {filteredAndSortedProducts.map((product) => (
               <ProductCard key={product.id} {...product} />
             ))}

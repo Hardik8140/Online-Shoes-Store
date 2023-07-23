@@ -6,17 +6,20 @@ import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import { CartProvider } from "./Context/CartContext.jsx";
 import { WishlistProvider } from "./Context/WishlistContext.jsx";
+import AuthProvider from "./Context/AuthContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <WishlistProvider>
-    <CartProvider>
-      <BrowserRouter>
-        <ChakraProvider>
-          <React.StrictMode>
-            <App />
-          </React.StrictMode>
-        </ChakraProvider>
-      </BrowserRouter>
-    </CartProvider>
-  </WishlistProvider>
+  <AuthProvider>
+    <WishlistProvider>
+      <CartProvider>
+        <BrowserRouter>
+          <ChakraProvider>
+            <React.StrictMode>
+              <App />
+            </React.StrictMode>
+          </ChakraProvider>
+        </BrowserRouter>
+      </CartProvider>
+    </WishlistProvider>
+  </AuthProvider>
 );
