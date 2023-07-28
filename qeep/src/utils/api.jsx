@@ -25,3 +25,11 @@ export const putData = (url, id, data) => {
     data: data,
   });
 };
+
+export const postAddressToAPI = (url, addressData) => {
+  return axios.post(url, addressData);
+};
+
+export const getUserAddressesFromAPI = (url) => {
+  return axios.get(url);
+};

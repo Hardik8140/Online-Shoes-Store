@@ -12,13 +12,24 @@ import { FiHeart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { CartContext } from "../Context/CartContext";
 import { WishlistContext } from "../Context/WishlistContext";
+import StarRating from "./StarRating";
 
-const ProductCard = ({ id, image, name, brand, price, category }) => {
+const ProductCard = ({
+  id,
+  image,
+  name,
+  brand,
+  price,
+  category,
+  rating,
+  stars,
+}) => {
   const { wishlistItems, addToWishlist, removeFromWishlist, isItemInWishlist } =
     useContext(WishlistContext);
   const { addToCart } = useContext(CartContext);
   const [isAddWishlist, setIsAddWishlist] = useState(false);
   const toast = useToast();
+  const [selectedStar, setSelectedStar] = useState(stars);
 
   const handleAddToWishlist = () => {
     setIsAddWishlist(true);
@@ -77,6 +88,14 @@ const ProductCard = ({ id, image, name, brand, price, category }) => {
         </Text>
         <Heading as="h3" size="md" m={3}>
           ₹{price}
+        </Heading>
+        <Heading as="h3" size="md" m={3} display="flex">
+          <StarRating
+            selectedStar={stars}
+            totalStar={5}
+            onStarClick={(star) => setSelectedStar(star)}
+          />
+          {rating}
         </Heading>
       </Link>
       <Box display="flex" justifyContent="space-around">

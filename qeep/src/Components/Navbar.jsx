@@ -20,7 +20,7 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 const Navbar = () => {
   const navigate = useNavigate();
   const [searchInput, setSearchInput] = useState("");
-  const { user, logout } = useContext(AuthContext);
+  const { isAuth, user, logout } = useContext(AuthContext);
 
   const handleLogout = () => {
     logout();
@@ -28,11 +28,11 @@ const Navbar = () => {
 
   const handleSearch = () => {
     if (searchInput.trim() !== "") {
-      // Redirect to the products page with the search query
-      navigate(`/products?search=${encodeURIComponent(searchInput.trim())}`);
+      const searchParams = new URLSearchParams();
+      searchParams.append("search", searchInput.trim());
+      navigate(`/products?${searchParams.toString()}`);
     }
   };
-
   return (
     <Box
       boxShadow="base"
@@ -146,7 +146,7 @@ const Navbar = () => {
           </Tooltip>
         </Box>
 
-        {user ? (
+        {isAuth && user ? (
           <>
             <Avatar name={user.name} src="" />
             <Button onClick={handleLogout}>Logout</Button>

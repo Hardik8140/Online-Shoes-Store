@@ -14,7 +14,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Login = () => {
-  const { user, login } = useContext(AuthContext);
+  const { isAuth, user, login } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -25,15 +25,18 @@ const Login = () => {
     try {
       let res = await axios.get(`https://growfin.onrender.com/users`);
       let users = res.data;
-      let user = users.find(
+      let userData = users.find(
         (user) => user.email === email && user.password === password
       );
-      if (user) {
-        if (user.email === "admin@gmail.com" && user.password === "admin") {
+      if (userData) {
+        if (
+          userData.email === "admin@gmail.com" &&
+          userData.password === "admin"
+        ) {
           // loginUsers();
           navigate("/admin");
         } else {
-          login();
+          login(userData);
         }
       }
     } catch (error) {
@@ -41,13 +44,13 @@ const Login = () => {
     }
   };
 
-  if (user) {
+  if (isAuth) {
     return <Navigate to="/" />;
   }
 
   return (
     <Box backgroundColor="blackAlpha.200" p="50px">
-      <Box w="35%" m="auto">
+      <Box w={{ base: "90%", sm: "90%", md: "55%", lg: "35%" }} m="auto">
         <form onSubmit={handleSubmit}>
           <Heading m={3} textDecoration="underline">
             Welcome back...
@@ -82,6 +85,7 @@ const Login = () => {
           </FormControl>
         </form>
       </Box>
+
       {/* </SimpleGrid> */}
     </Box>
   );
