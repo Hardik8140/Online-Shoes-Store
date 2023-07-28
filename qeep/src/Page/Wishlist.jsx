@@ -12,11 +12,15 @@ import {
 import { CartContext } from "../Context/CartContext";
 
 const Wishlist = () => {
-  const { wishlistItems } = useContext(WishlistContext);
+  const { wishlistItems, removeFromWishlist } = useContext(WishlistContext);
   const { addToCart } = useContext(CartContext);
 
   const handleAddToCart = (item) => {
     addToCart(item);
+  };
+
+  const handleRemoveFromWishlist = (itemId) => {
+    removeFromWishlist(itemId);
   };
 
   return (
@@ -46,7 +50,9 @@ const Wishlist = () => {
               <Button onClick={() => handleAddToCart(item)} m={2}>
                 Add to Cart
               </Button>
-              <Button m={2}>Remove</Button>
+              <Button m={2} onClick={() => handleRemoveFromWishlist(item.id)}>
+                Remove
+              </Button>
             </Card>
           ))}
         </SimpleGrid>

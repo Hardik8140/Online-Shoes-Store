@@ -12,6 +12,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 import { FcOk } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../Context/AuthContext";
 
 const Cart = () => {
   const navigate = useNavigate();
@@ -22,6 +23,7 @@ const Cart = () => {
     decreaseQuantity,
     increaseQuantity,
   } = useContext(CartContext);
+  const { isAuth } = useContext(AuthContext);
 
   const handleIncreaseQuantity = (itemId) => {
     increaseQuantity(itemId);
@@ -49,7 +51,7 @@ const Cart = () => {
 
   return (
     <Box backgroundColor="blackAlpha.200" p={5}>
-      <SimpleGrid columns={2}>
+      <SimpleGrid columns={{ base: "1", md: "1", lg: "2" }}>
         <Card m={6}>
           <Box>
             {cartItems.length === 0 ? (
@@ -63,7 +65,12 @@ const Cart = () => {
                     key={item.id}
                     display="flex"
                     justifyContent="space-around"
-                    flexDirection="row"
+                    flexDirection={{
+                      base: "column",
+                      sm: "column",
+                      md: "column",
+                      lg: "column",
+                    }}
                     alignItems="center"
                     m={6}
                     p={6}
@@ -84,26 +91,24 @@ const Cart = () => {
                     <Heading as="h3" size="md" m={3}>
                       ₹{item.price}
                     </Heading>
-                    <Button
-                      m={3}
-                      onClick={() => handleIncreaseQuantity(item.id)}
-                    >
-                      +
-                    </Button>
-                    <Text>{item.quantity}</Text>
-                    <Button
-                      m={3}
-                      onClick={() => handleDecreaseQuantity(item.id)}
-                    >
-                      -
-                    </Button>
-                    <Button
-                      onClick={() => handleRemoveItem(item.id)}
-                      p={5}
-                      w="150em"
-                    >
-                      Remove
-                    </Button>
+                    <Box display="flex" alignItems="center">
+                      <Button
+                        m={3}
+                        onClick={() => handleIncreaseQuantity(item.id)}
+                      >
+                        +
+                      </Button>
+                      <Text>{item.quantity}</Text>
+                      <Button
+                        m={3}
+                        onClick={() => handleDecreaseQuantity(item.id)}
+                      >
+                        -
+                      </Button>
+                      <Button onClick={() => handleRemoveItem(item.id)} p={5}>
+                        Remove
+                      </Button>
+                    </Box>
                   </Card>
                 ))}
               </>

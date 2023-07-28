@@ -48,7 +48,7 @@ const Register = () => {
 
   return (
     <Box backgroundColor="blackAlpha.200" p="50px">
-      <Box w="35%" m="auto">
+      <Box w={{ base: "95%", sm: "95%", md: "55%", lg: "35%" }} m="auto">
         <form onSubmit={handleSubmit}>
           <Heading m={3} textDecoration="underline">
             Create Your Account
