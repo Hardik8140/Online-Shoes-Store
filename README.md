@@ -2,6 +2,8 @@
 
 Construct Individual Project
 
+![logo-color](https://github.com/Hardik8140/guided-aftermath-7976/assets/123854368/c9c3199d-69df-4935-b206-1fecf3980262)
+
 # [qeep.com](https://qeep-rho.vercel.app/)
 
 ![Screenshot (184)](https://github.com/Hardik8140/guided-aftermath-7976/assets/123854368/d7b71053-482a-476b-91cf-ed611f441208)
